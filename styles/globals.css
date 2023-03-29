@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+
+    .heroButton {
+      @apply px-5 py-2 rounded-full uppercase tracking-widest text-gray-500 border border-[#333333] hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/60 
+    }
+    .ContactInput {
+      @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40
+    }
+    .heroHeadText {
+      @apply font-black text-white lg:text-[70px] sm:text-[50px] xs:text-[40px] text-[35px] mt-2
+    }
+    .heroSubText {
+      @apply text-[#dfd9ff] font-medium lg:text-[40px] sm:text-[35px]
+       xs:text-[30px] text-[25px] lg:leading-[40px]
+    }
+    .heroDescription {
+      @apply mt-3 text-white font-medium text-[13px] sm:text-[16px] md:text-[20px] lg:text-[23px] max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto
+    }
+    .FormInput {
+      @apply text-white bg-tertiary py-3 px-6 placeholder:text-xl rounded-lg outline-none font-medium cursor-pointer
+    }
+    .green-pink-gradient {
+      background: "#00cea8";
+      background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+      background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+    }
+    .black-gradient {
+      background: #000000; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #434343,
+        #000000
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #434343,
+        #000000
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+  }
+
+  
