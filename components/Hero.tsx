@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 import Header from "./Header";
 interface Props {
   pageInfo: PageInfo;
-  socials: Social;
+  socials: Social[];
 }
 
 function Hero({ pageInfo, socials }: Props) {
