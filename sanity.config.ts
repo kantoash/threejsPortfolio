@@ -2,8 +2,7 @@ import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "./schemas";
-import Logo from "./components/Logo";
-import StudioNavbar from "./components/StudioNavbar";
+import { Logo, StudioNavbar, } from "./components";
 import { myTheme } from "./theme";
 import { getDefaultDocumentNode } from "./structure";
 

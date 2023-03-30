@@ -8,6 +8,8 @@ import Projects from './Projects'
 import Skills from './Skills'
 import StudioNavbar from './StudioNavbar'
 
+import Logo from './Logo'
+
 import BallCanvas from './Canvas/BallCanvas'
 import ComputersCanvas from './Canvas/ComputersCanvas'
 import EarthCanvas from './Canvas/EarthCanvas'
@@ -23,6 +25,9 @@ export {
     Projects,
     Skills,
     StudioNavbar,
+
+    Logo,
+
     BallCanvas,
     ComputersCanvas,
     EarthCanvas,
