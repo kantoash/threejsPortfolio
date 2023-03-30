@@ -1,4 +1,6 @@
-import React, { Suspense } from "react";
+'use client'
+
+import React from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -7,15 +9,6 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
-import CanvasLoader from "./Loader";
-{
-  /*  <Decal
-    debug // Makes "bounding box" of the decal visible
-    position={[0, 0, 0]} // Position of the decal
-    rotation={[0, 0, 0]} // Rotation of the decal (can be a vector or a degree in radians)
-    scale={1} // Scale of the decal
-  > */
-}
 
 const Ball = ({ icon }) => {
   const decal = useTexture(icon.src);

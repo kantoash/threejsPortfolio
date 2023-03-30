@@ -1,15 +1,17 @@
 import { groq } from "next-sanity";
-import React from "react";
-import About from "../../components/About";
-import ContactMe from "../../components/ContactMe";
-import Hero from "../../components/Hero";
-import Projects from "../../components/Projects";
-import Skills from "../../components/Skills";
+import {
+  About,
+  ContactMe,
+  Hero,
+  Projects,
+  Skills,
+  PreviewPage,
+  PreviewSuspense,
+} from "../../components";
 import { client } from "../../lib/sanity.client";
 import { PageInfo, Project, Social } from "../../typing";
 import { previewData } from "next/headers";
-import PreviewSuspense from "../../components/PreviewSuspense";
-import PreviewPage from "../../components/PreviewPage";
+
 
 const pageInfoQuery = groq`
     *[_type == "pageInfo"][0]
@@ -50,7 +52,10 @@ export default async function HomePage() {
 
   return (
     <div className="bg-[rgb(41,41,41)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden gap-y-10">
-      <section id="hero" className="snap-start bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <section
+        id="hero"
+        className="snap-start bg-hero-pattern bg-cover bg-no-repeat bg-center"
+      >
         <Hero pageInfo={pageInfo} socials={socials} />
       </section>
       <section id="About" className="snap-center">

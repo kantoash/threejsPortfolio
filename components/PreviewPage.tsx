@@ -3,11 +3,7 @@
 import { groq } from "next-sanity";
 import { usePreview } from "../lib/sanity.preview";
 import { PageInfo, Project, Social } from "../typing";
-import About from "./About";
-import ContactMe from "./ContactMe";
-import Hero from "./Hero";
-import Projects from "./Projects";
-import Skills from "./Skills";
+import { About, Hero, Projects, ContactMe, Skills } from "../components";
 
 const pageInfoQuery = groq`
     *[_type == "pageInfo"][0]
@@ -31,14 +27,17 @@ export default function PreviewPage() {
 
   return (
     <div className="bg-[rgb(41,41,41)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
-      <section id="hero" className="snap-start">
+      <section
+        id="hero"
+        className="snap-start bg-hero-pattern bg-cover bg-no-repeat bg-center"
+      >
         <Hero pageInfo={pageInfo} socials={socials} />
       </section>
       <section id="About" className="snap-center">
         <About pageInfo={pageInfo} />
       </section>
       <section id="skills" className="snap-start">
-        <Skills/>
+        <Skills />
       </section>
       <section id="projects" className="snap-start">
         <Projects projects={projects} />
