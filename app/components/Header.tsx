@@ -4,7 +4,8 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Social } from "../typing";
+import { Social } from "../../typing";
+
 
 interface Props {
   socials: Social[];

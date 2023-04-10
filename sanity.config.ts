@@ -2,9 +2,8 @@ import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "./schemas";
-import { Logo, StudioNavbar, } from "./components";
+import { Logo, StudioNavbar, } from "./app/components";
 import { myTheme } from "./theme";
-import { getDefaultDocumentNode } from "./structure";
 
 export default defineConfig({
   basePath: "/studio",
@@ -14,7 +13,7 @@ export default defineConfig({
   projectId: "54o3nk6f",
   dataset: "production",
 
-  plugins: [deskTool({ defaultDocumentNode: getDefaultDocumentNode }), visionTool()],
+  plugins: [deskTool(), visionTool()],
 
   schema: {
     types: schemaTypes,

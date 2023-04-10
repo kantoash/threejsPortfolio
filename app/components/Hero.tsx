@@ -2,11 +2,12 @@
 
 import React from "react";
 import Image from "next/image";
-import { PageInfo, Social } from "../typing";
-import { urlFor } from "../lib/sanity.client";
+import { PageInfo, Social } from "../../typing";
+import { urlFor } from "../../lib/sanity.client";
 import ComputersCanvas from '../components/Canvas/ComputersCanvas'
 import { motion } from 'framer-motion'
 import Header from "./Header";
+
 interface Props {
   pageInfo: PageInfo;
   socials: Social[];

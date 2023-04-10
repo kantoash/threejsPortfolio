@@ -1,9 +1,9 @@
 "use client";
 
-import React, { FormEvent, useRef, useState } from "react";
+import React, { FormEvent, useState } from "react";
 import { motion } from "framer-motion";
-import EarthCanvas from "./Canvas/EarthCanvas";
-import StarsCanvas from "./Canvas/StarsCanvas";
+// import EarthCanvas from "./Canvas/EarthCanvas";
+// import StarsCanvas from "./Canvas/StarsCanvas";
 import emailjs from "@emailjs/browser";
 
 function ContactMe() {
@@ -127,8 +127,8 @@ function ContactMe() {
         }}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        <StarsCanvas />
-        <EarthCanvas />
+        {/* <StarsCanvas /> */}
+        {/* <EarthCanvas /> */}
       </motion.div>
     </div>
   );
