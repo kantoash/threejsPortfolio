@@ -2,9 +2,9 @@ import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "./schemas";
-import { Logo, StudioNavbar, } from "./app/components";
 import { myTheme } from "./theme";
-
+import Logo from "./app/components/Logo";
+import StudioNavbar from './app/components/StudioNavbar'
 export default defineConfig({
   basePath: "/studio",
   name: "default",
