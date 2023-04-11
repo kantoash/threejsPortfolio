@@ -18,10 +18,10 @@ function Hero({ pageInfo, socials }: Props) {
   return (
     <div className="relative w-screen h-screen mx-auto ">
       <Header socials={socials}  />
-      <div
+      <section
         className={`sm:px-10 px-6 absolute inset-0 top-[100px] max-w-6xl mx-auto flex   items-start gap-5`}
       >
-        <div className="">
+        <section className="">
           <h1 className="heroHeadText flex items-center gap-2">
             Hi, I'm <span className="text-[#915eff]">{pageInfo.name}</span>
             <Image
@@ -33,16 +33,16 @@ function Hero({ pageInfo, socials }: Props) {
             />
           </h1>
           <p className="heroSubText">{pageInfo.role}</p>
-        </div>
-      </div>
+        </section>
+      </section>
       <ComputersCanvas/>
-      <div className="absolute xs:bottom-14 bottom-28 w-full flex justify-center items-center">
+      <section className="absolute xs:bottom-14 bottom-28 w-full flex justify-center items-center">
         <a href="#About">
-          <div className="w-[30px] h-[60px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2  ">
+          <section className="w-[30px] h-[60px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2  ">
             <motion.div animate={{ y:[0, 24, 0] }} transition={{ duration:1.5, repeat: Infinity, repeatType: 'loop' }} className="w-3 h-3 rounded-full bg-secondary my-1" />
-          </div>
+          </section>
         </a>
-      </div>
+      </section>
     </div>
   );
 }

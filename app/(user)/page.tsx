@@ -1,4 +1,5 @@
 
+import ClientOnly from "../ClientOnly";
 import getPageInfo from "../actions/getPageInfo";
 import getProjects from "../actions/getProjects";
 import getSocials from "../actions/getSocials";
@@ -17,7 +18,8 @@ export default async function HomePage() {
   // "react-vertical-timeline-component": "^3.6.0",
 
   return (
-    <div className="bg-[rgb(41,41,41)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden gap-y-10">
+    <ClientOnly>
+      <main className="bg-[rgb(41,41,41)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden gap-y-10">
       <section
         id="hero"
         className="snap-start bg-hero-pattern bg-cover bg-no-repeat bg-center"
@@ -36,6 +38,7 @@ export default async function HomePage() {
    <section id="contact" className="snap-start ">
         <ContactMe />
       </section>
-    </div>
+    </main>
+    </ClientOnly>
   );
 }
